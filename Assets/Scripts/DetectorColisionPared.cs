@@ -10,22 +10,23 @@ public class DetectorColisionPared : MonoBehaviour {
     [SerializeField]
 
     bool colorChoque = false;
-    double tiempoChoque = 0.5;
+    double tiempoChoque = 0.5d;
     
     private  void Update()
     {
         if (colorChoque == true)
         {
-            tiempoChoque = tiempoChoque - 0.05;
-            if (tiempoChoque == 0)
+            tiempoChoque = tiempoChoque - Time.deltaTime;
+            if (tiempoChoque < 0.0d)
             {
              
                 gameObject.GetComponent<MeshRenderer>().material = colorMuros;
                 colorChoque = false;
+                tiempoChoque = 0.5d;
             }
         
         }
-        tiempoChoque = 0.5;
+        
     }
     private void OnCollisionEnter(Collision choque) {
 
