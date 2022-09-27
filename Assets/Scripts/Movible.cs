@@ -9,9 +9,7 @@ public class Movible : MonoBehaviour {
     float velMovimiento = 1.5f;
     // Update is called once per frame
     private void Update()
-    {
-        void OnCollisionEnter(Collision choque)
-        {
+    {        
             if (vuelta == true)
             {
                 transform.Translate(-1f * velMovimiento, 0f, 0f);
@@ -25,9 +23,7 @@ public class Movible : MonoBehaviour {
             {
                 vuelta = true;
             }
-
-        }
-
+    
         transform.Translate(1f * velMovimiento, 0f, 0f);
     }
     }

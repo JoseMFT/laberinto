@@ -2549,9 +2549,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b48496e21ae77e2419894a3d270ba96b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorMuros: {fileID: 2100000, guid: 6185af3a96336cb49b83a65cadfa312c, type: 2}
-  choqueMuros: {fileID: 2100000, guid: 966a72518213b154ea279773e80ddb43, type: 2}
-  colorChoque: 0
 --- !u!1 &1011736758
 GameObject:
   m_ObjectHideFlags: 0

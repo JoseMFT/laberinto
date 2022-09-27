@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DetectorColisionPared : MonoBehaviour {
+public class collision_detection: MonoBehaviour {
     [SerializeField]
     Material colorMuros;
     [SerializeField]
@@ -11,22 +11,19 @@ public class DetectorColisionPared : MonoBehaviour {
 
     bool colorChoque = false;
     double tiempoChoque = 0.5d;
-    
-    private  void Update()
-    {
-        if (colorChoque == true)
-        {
+
+    private void Update() {
+        if (colorChoque == true) {
             tiempoChoque = tiempoChoque - Time.deltaTime;
-            if (tiempoChoque < 0.0d)
-            {
-             
+            if (tiempoChoque < 0.0d) {
+
                 gameObject.GetComponent<MeshRenderer>().material = colorMuros;
                 colorChoque = false;
                 tiempoChoque = 0.5d;
             }
-        
+
         }
-        
+
     }
     private void OnCollisionEnter(Collision choque) {
 
@@ -36,7 +33,7 @@ public class DetectorColisionPared : MonoBehaviour {
 
             colorChoque = true;
 
-        }   
+        }
     }
 }
 
