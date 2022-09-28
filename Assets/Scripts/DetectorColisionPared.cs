@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class collision_detection: MonoBehaviour {
+public class DetectorColisionhPared: MonoBehaviour {
     [SerializeField]
     Material colorMuros;
     [SerializeField]

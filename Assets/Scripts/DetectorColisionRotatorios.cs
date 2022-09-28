@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DetectorColisionRotatorio : MonoBehaviour
+public class DetectorColisionMovible : MonoBehaviour
 {
     [SerializeField]
     Material murosRotatorios;
