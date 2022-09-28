@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DetectorColisionhPared: MonoBehaviour {
+public class DetectorColisionPared: MonoBehaviour {
     [SerializeField]
     Material colorMuros;
     [SerializeField]
     Material choqueMuros;
     [SerializeField]
 
-    bool colorChoque = false;
+    private bool colorChoque = false;
     double tiempoChoque = 0.5d;
 
     private void Update() {
