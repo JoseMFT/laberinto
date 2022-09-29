@@ -7,7 +7,6 @@ public class DetectorMeta : MonoBehaviour {
  
     [SerializeField]    // pantallaFinal será el canvas con la pantalla final que, por defecto, se encuentra desactivado
     GameObject pantallaFinal;
-
     [SerializeField]     // Tiempo es un text mesh que se encuentra también en el juego, pero que debemos declarar para poder utilizar
     TextMeshProUGUI textTiempo;
 
@@ -15,7 +14,7 @@ public class DetectorMeta : MonoBehaviour {
     bool Jugando = true;  // La variable booleana Jugando representa si la partida ha acabado o no
         
     private void OnTriggerEnter (Collider other) { // Algo hace contacto con la meta
-    
+                                                   // 
         if (other.tag == "Player") { // Si ese algo tiene el tag "Player" (solo aplicado sobre el jugador):
             Debug.Log ("Jugador llegó a la meta"); // Aparecerá este texto en la consola de debug
             textTiempo.text = DetectorTiempo.ToString(); // La variable DetectorTiempo se convertirá en un string y aparecerá en el text mesh Tiempo
@@ -26,6 +25,7 @@ public class DetectorMeta : MonoBehaviour {
     }
 
     private void Update () {
+
         if (Jugando == true) { // Si la partida no ha acabado:
             DetectorTiempo = DetectorTiempo + Time.deltaTime; // DetectorTiempo seguirá aumentando
         }        
