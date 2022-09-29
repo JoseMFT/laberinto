@@ -1,0 +1,7 @@
+Alumno:			José María Frías Tejera
+Nombre del juego: 	laberinto 
+Repositorio de GitHub: 	https://github.com/JoseMFT/laberinto
+
+ 					*** ANOTACIONES *** 
+Aparte de las modificiones pertinentes, he añadido otra que invierte los controles del jugador 
+por un tiempo limitado al hacer contacto con una trampa de color igual a la meta.
